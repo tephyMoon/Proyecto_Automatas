@@ -1,0 +1,23 @@
+{
+  "compilerOptions": {
+    "target": "ES2020",
+    "module": "ESNext",
+    "moduleResolution": "Bundler",
+    "allowJs": true,
+    "strict": true,
+    "jsx": "preserve",
+    "baseUrl": ".",
+    "types": ["@types/node"],
+    "paths": {
+      "~/*": ["./*"],
+      "@/*": ["./*"]
+    }
+  },
+  "include": ["**/*.ts", "**/*.vue", ".nuxt", "nuxt.config.ts", ".nuxt/**/*.d.ts"],
+  "exclude": [
+    "node_modules",
+    ".output",
+    "postcss.config.cjs",
+    "tailwind.config.cjs"
+  ]
+}
